@@ -6,7 +6,7 @@ Click here for live demo: [ToDo](https://wesdell.github.io/to-do/)
 
 The ToDo app is a website where you can save your notes, with **Frontend features only**.
 
-![Project image](https://github.com/wesdell/cartwes/blob/main/src/assets/img/todoapp.png?raw=true)
+![Project image](https://github.com/wesdell/to-do/blob/main/src/assets/img/todoapp.png?raw=true)
 
 ## Common functionalities are:
 
