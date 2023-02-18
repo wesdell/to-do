@@ -1,7 +1,7 @@
-import Link from "./Link";
-import { ReactComponent as ListSVG } from "../../assets/img/list.svg";
-import { ReactComponent as AddSVG } from "../../assets/img/add.svg";
-import styles from "./main.module.css";
+import Link from './Link'
+import { ReactComponent as ListSVG } from '../../assets/svg/list.svg'
+import { ReactComponent as AddSVG } from '../../assets/svg/add.svg'
+import styles from './main.module.css'
 
 const Main = ({ children }) => {
   return (
@@ -12,7 +12,7 @@ const Main = ({ children }) => {
       </aside>
       <main className={styles.main_content}>{children}</main>
     </div>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main

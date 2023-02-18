@@ -1,7 +1,7 @@
-import { ReactComponent as ProfileSVG } from "../../assets/img/profile.svg";
-import { ReactComponent as IconSVG } from "../../assets/img/icon.svg";
-import styles from "./header.module.css";
-import Link from "../Main/Link";
+import { ReactComponent as ProfileSVG } from '../../assets/svg/profile.svg'
+import { ReactComponent as IconSVG } from '../../assets/svg/icon.svg'
+import styles from './header.module.css'
+import Link from '../Main/Link'
 
 const Header = () => {
   return (
@@ -14,7 +14,7 @@ const Header = () => {
         <Link to="/" Icon={ProfileSVG} />
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
