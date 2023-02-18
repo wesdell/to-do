@@ -1,0 +1,6 @@
+.form_container_btn {
+  @apply w-full h-auto px-4 py-2 flex justify-between bg-slate-400;
+}
+.error {
+  @apply mb-2 ml-4 font-bold text-red-500;
+}

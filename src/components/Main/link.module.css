@@ -1,0 +1,9 @@
+.icon {
+  @apply h-7 w-7 fill-slate-600;
+}
+.link {
+  @apply h-11 px-3 flex items-center hover:bg-pink-100 transition-all duration-500;
+}
+.link_text {
+  @apply ml-3 text-sm  text-slate-600 font-bold;
+}

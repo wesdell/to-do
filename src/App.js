@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import List from "./components/list/List";
+import Details from "./components/add-goal/Details";
+import NotFound from "./components/notfound/NotFound";
+import "./App.css";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<List />} />
+          <Route path="/list" element={<List />}>
+            <Route
+              path=":id"
+              element={
+                <Modal>
+                  <Details />
+                </Modal>
+              }
+            />
+          </Route>
+          <Route path="/add-goal" element={<Details />} />
+        </Route>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   );
 }
 

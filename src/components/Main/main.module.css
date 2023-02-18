@@ -1,0 +1,10 @@
+.principal {
+  min-height: calc(100vh - 5.25rem);
+  @apply flex flex-col bg-violet-200 md:flex-row md:bg-white;
+}
+.aside_bar {
+  @apply flex flex-row w-full h-auto bg-white md:w-60 md:flex-col;
+}
+.main_content {
+  @apply w-full px-4 overflow-scroll md:mb-3 md:mr-3 md:bg-violet-200 md:shadow-inner md:shadow-gray-400;
+}
